@@ -1,0 +1,213 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	cursor: default;
+	/* overflow-y: scroll; */
+	margin-top: -1px;
+	/* background-image: url(../img/pattern4.png); */
+	background: #F9F6F1 none repeat scroll 0% 0%;
+	}
+
+/* NAVBAR */
+.navbar-brand {
+	position: absolute;
+	left: 50%;
+	margin-left: -165px;
+	font-family: 'Comfortaa', cursive;
+	letter-spacing: 0.7em;
+	z-index: 2;
+	}
+
+	@media (min-width: 768px) {
+		.navbar > .container-fluid .navbar-brand {
+			margin-left: -165px;
+			}
+		}
+
+.slogan {
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 0.1em;
+	font-size: 1.2em;
+	margin-left: 60px;
+	}
+
+.navbar-brand-img {
+	position: absolute;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: -30px;
+	border-radius: 100%;
+	background-image: linear-gradient(to bottom, #FCFCFC 0%, #F8F8F8 100%);
+	background-repeat: repeat-x;
+	z-index: 1;
+	}
+
+	.navbar-brand-img-circle {
+		position: absolute;
+		left: 50%;
+		margin-top: 50px;
+		margin-left: -30px;
+		width: 60px;
+		height: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		border: 1px solid #E7E7E7;
+		border-top: 0;
+		z-index: 1;
+		}
+		
+.unread i {
+	color: #5bc0de;
+	}
+	
+	.unread:hover i {
+	color: #337ab7; /* 31b0d5 */
+	}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #337ab7;
+}
+
+	/* Entête dropdown */
+.navbar-default .navbar-nav > li.dropdown > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #337ab7;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #337ab7;
+	background-color: transparent;
+}
+
+	/* Current */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .active > a {
+    background-image: none;
+    box-shadow: none;
+	background-color: transparent;
+	color: #337ab7;
+}
+
+.navbar {
+    margin-bottom: 70px;
+}
+
+/* BADGES */
+nav .badge {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  line-height: 16px;
+  height: 20px;
+  width: 20px;
+  padding: 0 0px;
+  font-family: Arial, sans-serif;
+  font-size: 0.9em;
+  color: #5bc0de;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+ /* border: 1px solid red; */ 
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+nav .badge {
+  background: none;
+  border-color: none;
+  background-image: none;
+}
+
+nav .badge.green {
+  background: #77cc51;
+  border-color: #59ad33;
+  background-image: -webkit-linear-gradient(top, #a5dd8c, #77cc51);
+  background-image: -moz-linear-gradient(top, #a5dd8c, #77cc51);
+  background-image: -o-linear-gradient(top, #a5dd8c, #77cc51);
+  background-image: linear-gradient(to bottom, #a5dd8c, #77cc51);
+}
+
+nav .badge.yellow {
+  background: #faba3e;
+  border-color: #f4a306;
+  background-image: -webkit-linear-gradient(top, #fcd589, #faba3e);
+  background-image: -moz-linear-gradient(top, #fcd589, #faba3e);
+  background-image: -o-linear-gradient(top, #fcd589, #faba3e);
+  background-image: linear-gradient(to bottom, #fcd589, #faba3e);
+}
+
+nav .badge.red {
+  background: #fa623f;
+  border-color: #fa5a35;
+  background-image: -webkit-linear-gradient(top, #fc9f8a, #fa623f);
+  background-image: -moz-linear-gradient(top, #fc9f8a, #fa623f);
+  background-image: -o-linear-gradient(top, #fc9f8a, #fa623f);
+  background-image: linear-gradient(to bottom, #fc9f8a, #fa623f);
+}
+
+/* TCHAT */
+#tchat .panel-body {
+	overflow: auto;
+	height: 250px;
+	font-size: 13px;
+}
+
+
+
+#tchat .panel-footer {
+	font-size: 13px;
+	padding: 0;
+}
+
+#input-tchat {
+	width: 100%;
+	height: 100%;
+    background-color: transparent;
+	border: none;
+	padding: 10px 15px;
+}
+
+.tchat-auteur {
+	color: #337AB7;
+}
+
+
+/* ACCUEIL */
+#liste-poemes .list-group-item {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.liste-titre-poeme {
+	display: inline-block;
+	min-width: 80%;
+}
+
+.liste-auteur-poeme {
+	display: inline-block;
+	min-width: 20%;
+	color: #337AB7;
+	margin-top: -1px;
+}
+
+.panel-heading + .list-group .list-group-item:first-child {
+    border-top-width: 0px;
+}
+
+#liste-poemes .liste-titre-poeme:hover + .list-group-item {
+	background-color: #F5F5F5;
+}
+
+.liste-poeme:hover .liste-titre-poeme, .liste-poeme:hover .liste-auteur-poeme{
+	background-color: #F5F5F5;
+}
+
+/* DISCORD */
+#discord {
+	
+}
